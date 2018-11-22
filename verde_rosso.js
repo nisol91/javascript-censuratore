@@ -19,13 +19,25 @@ console.log(numbers);
 var pari = [];
 var dispari = [];
 
+// for (var i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 == 0) {
+//     pari.push(numbers[i]);
+//   } else {
+//     dispari.push(numbers[i]);
+//   }
+// }
+//
+// document.getElementById('verde').innerHTML = pari;
+// document.getElementById('rosso').innerHTML = dispari;
+
+// alternativa di stampa
+
 for (var i = 0; i < numbers.length; i++) {
   if (numbers[i] % 2 == 0) {
-    pari.push(numbers[i]);
+    // pari.push(numbers[i]);
+    document.getElementById('verde').innerHTML += numbers[i] + '<br>';
   } else {
-    dispari.push(numbers[i]);
+    // dispari.push(numbers[i]);
+    document.getElementById('rosso').innerHTML += numbers[i] + '<br>';
   }
 }
-
-document.getElementById('verde').innerHTML = pari;
-document.getElementById('rosso').innerHTML = dispari;

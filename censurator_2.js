@@ -29,6 +29,7 @@ for (var i = 0; i < text_arr.length; i++) {
     count.push('1');
   }
 }
+// console.log(count);
 
 var text_final = text_arr.join(' ');
 
